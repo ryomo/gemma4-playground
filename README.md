@@ -27,3 +27,14 @@ pnpm run dev
 ```
 
 Open Chrome's DevTools to read outputs.
+
+## Update dependencies
+
+```sh
+cd python/
+uv sync --upgrade
+cd ../webgpu-onnx/
+pnpm update
+git add -u
+git commit -m 'chore: update dependencies
+```
